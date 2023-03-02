@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+					<clipPath id="slant_mask">
+						<path d="M100,200H300V0h-100z"></path>
+					</clipPath>
+					<clipPath id="heart_mask" transform="matrix(1,0,0,1,0,0)" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+						<path d="M17.19,4.155c-1.672-1.534-4.383-1.534-6.055,0L10,5.197L8.864,4.155c-1.672-1.534-4.382-1.534-6.054,0 c-1.881,1.727-1.881,4.52,0,6.246L10,17l7.19-6.599C19.07,8.675,19.07,5.881,17.19,4.155z" transform="matrix(14.2857143,0,0,14.2857143,0,-42.8571429)"></path>
+					</clipPath>
+					<clipPath id="all_mask"><path d="M 0,0 h300 v200 h-300 z"></path></clipPath>
+					<clipPath id="none_mask"></clipPath>
+
+					<g id="svg_flag_1" clip-path="url(#all_mask)" style="clip-path: url(&quot;#heart_mask&quot;);"><rect height="34.333333333333336" width="300" y="0" style="fill: #E40303"></rect><rect height="34.333333333333336" width="300" y="33.333333333333336" style="fill: #FF8C00"></rect><rect height="34.333333333333336" width="300" y="66.66666666666667" style="fill: #FFED00"></rect><rect height="34.333333333333336" width="300" y="100" style="fill: #008026"></rect><rect height="34.333333333333336" width="300" y="133.33333333333334" style="fill: #24408E"></rect><rect height="34.333333333333336" width="300" y="166.66666666666666" style="fill: #732982"></rect></g>
+					<g id="svg_flag_2" clip-path="url(#slant_mask)" transform="matrix(1,0,0,1,0,0)" style="transform: matrix(1, 0, 0, 1, 0, 0); clip-path: url(&quot;#none_mask&quot;);"><rect height="41" width="300" y="0" style="fill: #3DA542"></rect><rect height="41" width="300" y="40" style="fill: #A7D379"></rect><rect height="41" width="300" y="80" style="fill: #FFFFFF"></rect><rect height="41" width="300" y="120" style="fill: #A9A9A9"></rect><rect height="41" width="300" y="160" style="fill: #000000"></rect></g>
+				</svg>

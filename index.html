@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Little Hearts</title>
+		<link rel="stylesheet" href="./css.css">
+		<link rel="shortcut icon" href="./sym/rainbow.svg">
+
+	</head>
+	<body>
+		<div style='display:none' >
+			<svg>
+				<symbol id="heart" viewBox="0 3 20 14">
+					<path  d="M17.19,4.155c-1.672-1.534-4.383-1.534-6.055,0L10,5.197L8.864,4.155c-1.672-1.534-4.382-1.534-6.054,0 c-1.881,1.727-1.881,4.52,0,6.246L10,17l7.19-6.599C19.07,8.675,19.07,5.881,17.19,4.155z" />
+				</symbol>
+
+			</svg>
+		</div>
+		<div class='content'>
+			<div id="svg_div">
+
+				<svg viewBox="0 0 300 200">
+					<clipPath id="slant_mask">
+						<path d="M 200,0 h100 v200 h-200 z"/>
+					</clipPath>
+					<clipPath id="heart_mask"transform='matrix(1,0,0,1,0,0)'>
+						<path  d="M17.19,4.155c-1.672-1.534-4.383-1.534-6.055,0L10,5.197L8.864,4.155c-1.672-1.534-4.382-1.534-6.054,0 c-1.881,1.727-1.881,4.52,0,6.246L10,17l7.19-6.599C19.07,8.675,19.07,5.881,17.19,4.155z" transform='matrix(14.2857143,0,0,14.2857143,0,-42.8571429)' />
+					</clipPath>
+					<clipPath id="all_mask"><path d="M 0,0 h300 v200 h-300 z"/></clipPath>
+					<clipPath id="none_mask"></clipPath>
+
+					<g id="svg_flag_1" clip-path="url(#all_mask)"></g>
+					<g id="svg_flag_2" clip-path="url(#slant_mask)" transform='matrix(1,0,0,1,0,0)'></g>
+				</svg>
+				<img id="export" src='./sym/export.svg' />
+			</div>
+			<div class="settings">
+				<div id="flag_1" class="flag_box">
+					<p>Asexual</p>
+					<!--<div class="flag_bubble">
+						<svg viewBox="0 0 100 100">
+							<rect height="100" width="100" style="fill: #A3A3A3"></rect>
+							<rect height="60" width="20" y="20" x="40" style="fill: #505050"></rect>
+							<rect height="20" width="60" y="40" x="20" style="fill: #505050"></rect>
+						</svg>
+				</div>--></div>
+				<div id="flag_2" class="flag_box">
+					<p>Aromantic</p>
+					<!--<div class="flag_bubble">
+						<svg viewBox="0 0 100 100">
+							<rect height="100" width="100" style="fill: #A3A3A3"></rect>
+							<rect height="60" width="20" y="20" x="40" style="fill: #505050"></rect>
+							<rect height="20" width="60" y="40" x="20" style="fill: #505050"></rect>
+						</svg>
+				</div>--></div>
+				<div id="masks" class="top" >
+					<div class="settings_flag">
+						<svg viewBox="0 0 300 200">
+							<rect height="200" width="300"></rect>
+						</svg>
+					</div>
+					<div class="settings_flag">
+						<svg viewBox="0 0 300 200">
+							<rect height="200" width="300"></rect>
+							<path d="M 200,0 H 300 V 200 H 100 Z" ></path>
+						</svg>
+					</div>
+					<div class="settings_flag">
+						<svg viewBox="0 0 300 200" >
+							<rect height="200" width="300"></rect>
+							<use href='#heart' x=0 y=12 height='176' />
+
+						</svg>
+					</div>
+					<div class="settings_flag">
+							<svg viewBox="0 0 300 200">
+								<rect height="200" width="300" style="fill: none;"></rect>
+								<use class="primary" href='#heart' x=0 y=12 height='176' />
+							</svg>
+						</div>
+				</div>
+				<div id="heart_dropdown" class='dropdown bottom'>
+					<div id='heart_size' class="slide_box">
+
+						<div class="settings_flag">
+							<svg viewBox="0 0 300 200" >
+								<rect height="200" width="300"></rect>
+								<use href='#heart' x=0 y=50 height='100' />
+							</svg>
+						</div>
+						<div class="slider" style="--val:0.6666666"></div>
+						<div class="settings_flag">
+							<svg viewBox="0 0 300 200" >
+								<rect height="200" width="300"></rect>
+								<use href='#heart' x=0 y=0 height='200' />
+							</svg>
+						</div>
+					</div>
+					<div id='heart_flag_size' class="slide_box">
+
+						<div class="settings_flag">
+							<svg viewBox="0 0 300 200" >
+								<rect height="200" width="300"></rect>
+								<rect height="100" width="150" x=75 y=50 class='dashed' ></rect>
+								<use href='#heart' x=0 y=50 height='100' />
+							</svg>
+						</div>
+						<div class="slider"></div>
+						<div class="settings_flag">
+							<svg viewBox="0 0 300 200" >
+								<rect height="200" width="300"></rect>
+								<rect height="200" width="300" class='dashed' ></rect>
+								<use href='#heart' x=0 y=50 height='100' />
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div id="slant_dropdown" class='dropdown bottom'>
+					<div id='slant_size' class="slide_box">
+
+						<div class="settings_flag">
+							<svg viewBox="0 0 300 200" >
+								<rect height="200" width="300"></rect>
+								<path d='M150,0v200h150v-200Z'/>
+							</svg>
+						</div>
+						<div class="slider" style="--val:0.333333333333"></div>
+						<div class="settings_flag">
+							<svg viewBox="0 0 300 200" >
+								<rect height="200" width="300"></rect>
+								<path d='M300,0v200h-300Z'/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="./js/flag_data.js" charset="utf-8"></script>
+			<script src="./js/svg_control.js" charset="utf-8"></script>
+			<script src="./js/slider.js" charset="utf-8"></script>
+			<script src="./js/flag_loader.js" charset="utf-8"></script>
+			<script src="./js/mask_loader.js" charset="utf-8"></script>
+			<script src="./js/export.js" charset="utf-8"></script>
+		</div>
+		<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+		<br><br><br>
+		<footer>
+			Symbols from Entypo pictograms by Daniel Bruce — www.entypo.com
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,161 @@
+@font-face {
+	font-family: 'MADEWaffleSlab';
+	src: url('./MADEWaffleSlabPERSONALUSE.woff') format('woff');
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'MADEWaffleSlab';
+}
+svg{
+	display: block;
+}
+body{
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 10mm;
+	background: #282c34;
+	color: #9da5b4;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: right;
+	max-height: 10mm;
+	padding: 2mm;
+}
+#svg_div{
+	height: 80mm;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #282c34;
+
+}
+#svg_div>svg{
+	height: 80%;
+}
+.flag_box{
+	height: 30mm;
+	overflow-x: scroll;
+}
+.flag_box>p{
+	position: sticky;
+	left: 0px;
+	padding-left:8mm;
+
+}
+.flag_bubble{
+	display: inline-block;
+	height: calc(100% - 1em);
+	border-radius: 10%;
+	padding: 1.5mm;
+	margin: 0.5mm;
+}
+.flag_bubble:hover{
+	background: #3a3f4b;
+}
+.flag_bubble svg{
+	height: 100%;
+	aspect-ratio: 1;
+
+	border-radius: 100%;
+}
+#masks{
+
+	display: flex;
+	align-items: center;
+    justify-content: space-around;
+}
+.settings_flag{
+	height: 80%;
+	margin: 2mm;
+}
+.settings_flag>svg{
+	height: 100%;
+	stroke: none;
+}
+.settings_flag>svg rect,
+.settings_flag>svg .primary{
+	fill: #9da5b4;
+}
+.settings_flag>svg{
+	fill: #292a2d;
+}
+.settings>*{
+	overflow-y: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
+	background: #21252b;
+	padding: 2mm;
+	border-radius: 8mm;
+	height: 30mm;
+
+}
+#export{
+	height: 10mm;
+	position: absolute;
+	top: 2mm;
+	right: 4mm;
+}
+.top{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.mid{
+	border-radius: 0px;
+}
+.bottom{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+.slide_box{
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+	padding-left: 10mm;
+	padding-right: 10mm;
+}
+#heart_dropdown{
+	height: 55mm;
+}
+#heart_dropdown>*{
+	height: 50%;
+}
+#slant_dropdown{
+	height: 29.5mm;
+}
+#slant_dropdown>*{
+	height: 100%;
+}
+.dashed{
+	fill:none;
+	stroke: #292a2d;
+	stroke-width: 2mm;
+	stroke-dasharray: 4mm;
+}
+.slider{
+	width: -webkit-fill-available;
+	width: -moz-available;
+	height: 2mm;
+	background: #292a2d;
+	border-radius: 5mm;
+	display: flex;
+	align-items: center;
+	margin-left: 10mm;
+	margin-right: 10mm;
+	--val:0;
+}
+.slider::after{
+	width: 3mm;
+	height: 3mm;
+	float: left;
+	position: relative;
+	display: block;
+	left: calc(var(--val) * 100% - 1.5mm);
+	content: "";
+	background: #9da5b4;
+	border-radius: 100%;
+}
