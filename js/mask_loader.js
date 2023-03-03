@@ -9,9 +9,3 @@ function add_mask_events(mask_flag,name1,name2){
 
 }
 var masks=document.getElementById('masks')
-add_mask_events(masks.children[0],'all','none')
-add_mask_events(masks.children[1],'all','slant')
-add_mask_events(masks.children[2],'all','heart')
-add_mask_events(masks.children[3],'heart','none')
-select_mask('all',false)
-select_mask('none',true)

@@ -37,7 +37,7 @@ function set_colors(bubble,colors){
 function setup_flag_bubble(flag_box,name,colors){
 	bubble=document.createElement("div")
 	bubble.className="flag_bubble"
-	flag_box.appendChild(bubble)
+	flag_box.lastElementChild.before(bubble)
 	set_colors(bubble,colors)
 	add_bubble_events(flag_box,bubble,name)
 
@@ -47,11 +47,3 @@ function setup_flag_box(flag_box){
 		setup_flag_bubble(flag_box,i,flag_data[i]["colors"])
 	}
 }
-
-
-setup_flag_box(flag_1)
-setup_flag_box(flag_2)
-// add_bubble_events(flag_1,flag_1.children[1],'Custom')
-// add_bubble_events(flag_2,flag_2.children[1],'Custom')
-select_flag('asexual',false)
-select_flag('aromantic',true)

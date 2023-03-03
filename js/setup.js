@@ -1,0 +1,13 @@
+setup_flag_box(flag_1)
+setup_flag_box(flag_2)
+add_bubble_events(flag_1,flag_1.children[1],'custom')
+add_bubble_events(flag_2,flag_2.children[1],'custom')
+select_flag('asexual',false)
+select_flag('aromantic',true)
+
+add_mask_events(masks.children[0],'all','none')
+add_mask_events(masks.children[1],'all','slant')
+add_mask_events(masks.children[2],'all','heart')
+add_mask_events(masks.children[3],'heart','none')
+select_mask('all',false)
+select_mask('none',true)
